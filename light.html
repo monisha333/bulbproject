@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb project</title>
+    
+</head>
+<body>
+  <style>
+    button
+    {padding: 10px;margin: 20px;background-color:orange;
+    }
+    body {
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./photos/newwall.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    img
+    {
+        height: 200px;
+    }
+   marquee{
+    align-items: baseline;
+    color: blue;
+   }
+
+  </style>
+    <script>
+        function light(value)
+        {
+            var pic;
+            if(value==1)
+            pic="photos/offnew.jpg";
+            else
+            pic="photos/on new.jpg";
+            document.getElementById('bulb').src=pic;
+            document.getElementById('bulb1').src=pic;
+        }
+    </script>
+    <img id="bulb" src="./photos/offnew.jpg">
+    <button onclick="light(0)">Turn ON</button>
+    <button onclick="light(1)">Turn OFF</button>
+    <marquee><h1><b>BULB PROJECT BY MONISHA</b></h1></marquee>
+    <img id="bulb1" src="./photos/offnew.jpg">
+    <button onclick="light(0)">Turn ON</button>
+    <button onclick="light(1)">Turn OFF</button>
+</body>
+</html>
